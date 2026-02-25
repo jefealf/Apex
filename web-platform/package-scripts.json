@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "server": "ts-node server.ts"
+    }
+}
