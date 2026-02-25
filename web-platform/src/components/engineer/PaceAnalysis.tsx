@@ -96,7 +96,7 @@ export const PaceAnalysis: React.FC<PaceAnalysisProps> = ({ telemetry }) => {
                                 contentStyle={{ backgroundColor: '#18181b', border: '1px solid #333', borderRadius: '4px' }}
                                 itemStyle={{ color: '#fff', fontSize: '12px', fontFamily: 'monospace' }}
                                 labelStyle={{ color: '#888', marginBottom: '4px' }}
-                                formatter={(val: number) => [formatTime(val), "Time"]}
+                                formatter={(val: any) => [formatTime(val as number), "Time"]}
                                 labelFormatter={(label) => `Lap ${label}`}
                             />
                             {avgTime > 0 && (
